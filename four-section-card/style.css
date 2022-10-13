@@ -1,0 +1,106 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+.main-text {
+  text-align: center;
+}
+
+.first-heading {
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+}
+
+.second-heading {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.product-desc {
+  color: hsl(229, 6%, 66%);
+  font-weight: 400;
+  margin-bottom: 15rem;
+}
+
+.product-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product-cards:hover {
+  cursor: pointer;
+}
+
+.card-heading {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+.card-text {
+  margin-bottom: 5rem;
+  color: hsl(229, 6%, 66%);
+  font-weight: 400;
+}
+
+.green-card {
+  background-color: hsl(0, 0%, 98%);
+  border-top: 5px hsl(180, 62%, 55%) solid;
+  border-radius: 2px;
+  padding: 1.5rem;
+  width: 33%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.red-card {
+  background-color: hsl(0, 0%, 98%);
+  border-top: 5px hsl(0, 78%, 62%) solid;
+  border-radius: 2px;
+  padding: 1.5rem;
+  width: 33%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-50%);
+}
+
+.blue-card {
+  background-color: hsl(0, 0%, 98%);
+  border-top: 5px hsl(212, 86%, 64%) solid;
+  border-radius: 2px;
+  padding: 1.5rem;
+  width: 33%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.final-card {
+  display: flex;
+  justify-content: center;
+}
+
+.final-card:hover {
+  cursor: pointer;
+}
+
+.card-icon {
+  float: right;
+}
+
+.orange-card {
+  background-color: hsl(0, 0%, 98%);
+  border-top: 5px hsl(34, 97%, 64%) solid;
+  border-radius: 2px;
+  padding: 2rem;
+  width: 28%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-50%);
+}
