@@ -61,6 +61,9 @@ section {
   padding: 1.5rem;
   width: 33%;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  animation-name: moveInLeft;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
 }
 
 .red-card {
@@ -71,6 +74,7 @@ section {
   width: 33%;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-50%);
+  transition: 0.5ss all ease-out;
 }
 
 .blue-card {
@@ -80,11 +84,17 @@ section {
   padding: 1.5rem;
   width: 33%;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  animation-name: moveInRight;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
 }
 
 .final-card {
   display: flex;
   justify-content: center;
+  animation-name: moveInBottom;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
 }
 
 .final-card:hover {
@@ -103,4 +113,40 @@ section {
   width: 28%;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-50%);
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
